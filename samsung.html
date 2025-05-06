@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samsung</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .brand-hero {
+      background: url('assets/samsunghero.jpg') no-repeat center center;
+      background-size: cover;
+      height: 400px;
+      position: relative;
+    }
+    .brand-hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .brand-hero-text {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+    }
+    .product-card img { height: 200px; object-fit: cover; }
+    .section-title { font-weight: 700; color: #0d6efd; text-transform: uppercase; }
+
+    .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #0d6efd;
+}
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Digitron</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item me-4"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item me-4"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item me-4"><a class="nav-link active" href="brands.html">Brands</a></li>
+          <li class="nav-item me-4"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="brand-hero">
+    <div class="brand-hero-text">
+      <h1 class="display-4 fw-bold">Samsung</h1>
+      <p class="lead">Leading the future with innovation and technology</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-4">About Samsung</h2>
+      <p class="text-muted">Samsung is a global technology company that revolutionizes the electronics market with smartphones, smart TVs, home appliances, and semiconductors. With innovation at its core, Samsung consistently delivers cutting-edge products that improve everyday life.</p>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="section-title mb-5 text-center">Top Samsung Products</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card product-card h-100 border-0 shadow-sm">
+            <img src="assets/s23.webp" class="card-img-top" alt="Galaxy S23">
+            <div class="card-body">
+              <h5 class="card-title">Galaxy S23 Ultra</h5>
+              <p class="card-text text-muted small">Samsung's flagship phone with advanced camera and performance features.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">View Product</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card product-card h-100 border-0 shadow-sm">
+            <img src="assets/neoqled.jpg" class="card-img-top" alt="Samsung Smart TV">
+            <div class="card-body">
+              <h5 class="card-title">Samsung Neo QLED TV</h5>
+              <p class="card-text text-muted small">Experience immersive entertainment with ultra-sharp 4K resolution.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">View Product</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card product-card h-100 border-0 shadow-sm">
+            <img src="assets/book3.jpg" class="card-img-top" alt="Galaxy Book 3">
+            <div class="card-body">
+              <h5 class="card-title">Galaxy Book 3</h5>
+              <p class="card-text text-muted small">Lightweight laptop with productivity features and seamless ecosystem integration.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">View Product</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-3">Experience the Innovation of Samsung</h2>
+      <p class="text-muted mb-4">Shop Samsung’s full range of products designed to elevate your digital lifestyle.</p>
+      <a href="https://www.samsung.com/ph/air-conditioners/all-air-conditioners/?cid=ph_pd_ppc_google-ads_air-conditioners_always-on_AWO-Hot-DAAC-ARC-Aircon-2025md_search-text-ads_AWO-Hot-DAAC-ARC-Aircon_none_pfm&utm_source=google-ads&utm_medium=search&utm_campaign=Hot-DAAC-ARC-Aircon&utm_term=Hot-DAAC-ARC-Aircon&utm_content=none&gad_source=1&gad_campaignid=20417373062&gbraid=0AAAAADnr-coz19JD85Cebn9cGhTOI4NIH&gclid=Cj0KCQjww-HABhCGARIsALLO6Xz3vJi4L0eF6b9h-EvJciKY9JQ0tRicCk9xkOWlOoXfyrqNfMNx_wEaAlqFEALw_wcB" class="btn btn-primary btn-lg px-4 py-2" target="_blank">Shop Samsung Products</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Digitron. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

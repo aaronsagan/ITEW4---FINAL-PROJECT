@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Razer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <style>
+    .brand-hero {
+      background: url('assets/razerhero.jpg') no-repeat center center;
+      background-size: cover;
+      height: 400px;
+      position: relative;
+    }
+
+    .brand-hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .brand-hero-text {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+    }
+
+    .product-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .section-title {
+      font-weight: 700;
+      color: #0d6efd;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Digitron</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item me-4"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item me-4"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item me-4"><a class="nav-link active" href="brands.html">Brands</a></li>
+          <li class="nav-item me-4"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>        
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="brand-hero">
+    <div class="brand-hero-text">
+      <h1 class="display-4 fw-bold">Razer Inc.</h1>
+      <p class="lead">For Gamers. By Gamers.</p>
+    </div>
+  </section>
+
+  <!-- Brand Description -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-4">About Razer</h2>
+      <p class="text-muted">Razer is the world's leading lifestyle brand for gamers, renowned for its high-performance gaming hardware, software, and services. With a fan base spanning every continent, Razer has built the world's largest gamer-focused ecosystem, including award-winning peripherals, Razer Synapse software, and Razer Gold payment services. Committed to innovation, Razer continues to redefine the gaming experience for enthusiasts worldwide.</p>
+    </div>
+  </section>
+
+  <!-- Featured Razer Products -->
+    <!-- Featured Razer Products -->
+    <section class="bg-light py-5">
+        <div class="container">
+          <h2 class="section-title mb-5 text-center">Top Razer Products</h2>
+          <div class="row g-4">
+            <!-- Product 1 -->
+            <div class="col-md-4">
+              <div class="card product-card h-100 border-0 shadow-sm">
+                <img src="assets/razerblade.webp" class="card-img-top" alt="Razer Blade 15"/>
+                <div class="card-body">
+                  <h5 class="card-title">Razer Blade 15</h5>
+                  <p class="card-text text-muted small">Powerful gaming laptop with sleek design and advanced thermal performance.</p>
+                  <a href="product-blade15.html" class="btn btn-outline-primary btn-sm">View Product</a>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Product 2 -->
+            <div class="col-md-4">
+              <div class="card product-card h-100 border-0 shadow-sm">
+                <img src="assets/adder.jpg" class="card-img-top" alt="Razer DeathAdder V2"/>
+                <div class="card-body">
+                  <h5 class="card-title">Razer DeathAdder V2</h5>
+                  <p class="card-text text-muted small">Ergonomic wired gaming mouse with precision sensor and customizable buttons.</p>
+                  <a href="product-deathadderv2.html" class="btn btn-outline-primary btn-sm">View Product</a>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Product 3 -->
+            <div class="col-md-4">
+              <div class="card product-card h-100 border-0 shadow-sm">
+                <img src="assets/kraken.jpg" class="card-img-top" alt="Razer Kraken X"/>
+                <div class="card-body">
+                  <h5 class="card-title">Razer Kraken X</h5>
+                  <p class="card-text text-muted small">Ultra-light gaming headset with 7.1 surround sound for immersive gameplay.</p>
+                  <a href="product-krakenx.html" class="btn btn-outline-primary btn-sm">View Product</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Call to Action -->
+      <section class="py-5 text-center">
+        <div class="container">
+          <h2 class="mb-3">Level Up Your Gaming with Razer</h2>
+          <p class="text-muted mb-4">Explore top-tier gaming gear and peripherals built for competitive performance.</p>
+          <a href="https://www.razer.com/ap-en/store?srsltid=AfmBOoo_IK-GJy6w451COagrV7K1FcR74pCFI82LBtYSkywBd98aA4s_" class="btn btn-primary btn-lg px-4 py-2" target="_blank">Shop Razer Products</a>
+        </div>
+      </section>
+    
+    <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Digitron. All rights reserved.</p>
+    </div>
+  </footer>
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    
+    </html>
+    
+ 
